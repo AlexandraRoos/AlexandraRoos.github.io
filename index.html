@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+
+    <title>Personal Portfolio | Get to Know Me</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -15,7 +17,9 @@
 
 <body>
 
-<header class="hero">
+<!-- HERO SECTION -->
+
+<header class="hero" id="home">
 
     <div class="hero-content">
 
@@ -38,20 +42,20 @@
         <div class="hero-buttons">
 
             <a href="#video" class="btn btn-primary">
-                Watch My Story
-                <span class="arrow">↗</span>
+                Get to Know Me
+                <span>↘</span>
             </a>
 
             <a href="#contact" class="btn btn-secondary">
                 Contact Me
-                <span class="arrow">→</span>
+                <span>↗</span>
             </a>
 
         </div>
 
         <div class="hero-footer">
             <span class="footer-line"></span>
-            <span>MARKETING · SUSTAINABILITY · INNOVATION</span>
+            MARKETING · SUSTAINABILITY · INNOVATION
         </div>
 
     </div>
@@ -61,34 +65,103 @@
         <div class="image-decoration"></div>
 
         <div class="hero-image">
-            <img src="Bewerbungsfoto.jpg" alt="Portrait">
+            <img
+                src="Bewerbungsfoto.jpg"
+                alt="My professional portrait"
+            >
         </div>
 
         <div class="floating-card">
             <span class="floating-icon">✳</span>
+
             <div>
                 <strong>Curiosity meets purpose.</strong>
                 <p>Always exploring what's next.</p>
             </div>
         </div>
 
-        <div class="visual-label">
-            <span>01 / INTRODUCTION</span>
-        </div>
-
     </div>
 
 </header>
 
-<section id="video" class="placeholder-section">
-    <h2>My Story</h2>
-    <p>Add your introduction video here.</p>
+
+<!-- GET TO KNOW ME / VIDEO SECTION -->
+
+<section class="intro-video-section" id="video">
+
+    <div class="intro-video-header">
+
+        <span class="section-label">
+            <span class="section-dot"></span>
+            A LITTLE INTRODUCTION
+        </span>
+
+        <h2>
+            Get to Know <span>Me.</span>
+        </h2>
+
+        <p>
+            Beyond the CV — get a glimpse of my personality,
+            my passions and what drives me.
+        </p>
+
+    </div>
+
+    <div class="video-container">
+
+        <video
+            class="intro-video"
+            controls
+            playsinline
+            preload="metadata"
+        >
+            <source
+                src="9AEE8CB8-A929-456E-90EF-3F80242A453E_2_0_a.mov"
+                type="video/quicktime"
+            >
+
+            Your browser does not support this video.
+            Please try opening this page in another browser.
+        </video>
+
+    </div>
+
+    <div class="video-caption">
+        <span>PERSONAL INTRODUCTION</span>
+        <span>01 / GET TO KNOW ME</span>
+    </div>
+
 </section>
 
-<section id="contact" class="placeholder-section">
-    <h2>Let's Connect.</h2>
-    <p>Add your contact information here.</p>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section" id="contact">
+
+    <span class="section-label">
+        LET'S CONNECT
+    </span>
+
+    <h2>Let's create something meaningful.</h2>
+
+    <p>
+        Interested in marketing, sustainability and innovation?
+        I'd love to connect.
+    </p>
+
+    <!-- Replace the email address below with your own -->
+    <a class="btn btn-primary" href="mailto:your.email@example.com">
+        Get in Touch <span>↗</span>
+    </a>
+
 </section>
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+    <p>Personal Portfolio · Marketing · Sustainability · Innovation</p>
+</footer>
 
 </body>
 </html>
