@@ -1,38 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
 <header class="hero">
 
-  <div class="hero-content">
+    <div class="hero-content">
 
-    <span class="badge">
-      Personal Portfolio
-    </span>
+        <span class="badge">
+            <span class="status-dot"></span>
+            PERSONAL PORTFOLIO
+        </span>
 
-    <h1>
-      Curious by Nature.<br>
-      Driven by Challenges.
-    </h1>
+        <h1>
+            Curious by Nature.<br>
+            <span>Driven by Challenges.</span>
+        </h1>
 
-    <p>
-      Exploring the intersection of marketing, sustainability and innovation.
-      Passionate about creating meaningful experiences, embracing new perspectives
-      and turning ideas into impact.
-    </p>
+        <p class="hero-description">
+            Exploring the intersection of marketing, sustainability and innovation.
+            Passionate about creating meaningful experiences, embracing new perspectives
+            and turning ideas into impact.
+        </p>
 
-    <div class="hero-buttons">
+        <div class="hero-buttons">
 
-      #video
-        Watch My Story
-      </a>
+            <a href="#video" class="btn btn-primary">
+                Watch My Story
+                <span class="arrow">↗</span>
+            </a>
 
-      #contact
-        Contact Me
-      </a>
+            <a href="#contact" class="btn btn-secondary">
+                Contact Me
+                <span class="arrow">→</span>
+            </a>
+
+        </div>
+
+        <div class="hero-footer">
+            <span class="footer-line"></span>
+            <span>MARKETING · SUSTAINABILITY · INNOVATION</span>
+        </div>
 
     </div>
 
-  </div>
+    <div class="hero-visual">
 
-  <div class="hero-image">
-      Bewerbungsfoto.jpg
-  </div>
+        <div class="image-decoration"></div>
+
+        <div class="hero-image">
+            <img src="Bewerbungsfoto.jpg" alt="Portrait">
+        </div>
+
+        <div class="floating-card">
+            <span class="floating-icon">✳</span>
+            <div>
+                <strong>Curiosity meets purpose.</strong>
+                <p>Always exploring what's next.</p>
+            </div>
+        </div>
+
+        <div class="visual-label">
+            <span>01 / INTRODUCTION</span>
+        </div>
+
+    </div>
 
 </header>
+
+<section id="video" class="placeholder-section">
+    <h2>My Story</h2>
+    <p>Add your introduction video here.</p>
+</section>
+
+<section id="contact" class="placeholder-section">
+    <h2>Let's Connect.</h2>
+    <p>Add your contact information here.</p>
+</section>
+
+</body>
+</html>
