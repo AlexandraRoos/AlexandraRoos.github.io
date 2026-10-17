@@ -4,568 +4,615 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio showcasing experience in digital marketing, sustainability, artificial intelligence and corporate communications.">
 
-    <title>Personal Portfolio | Digital Marketing & Sustainability</title>
+    <title>Your Name | Marketing, Digital & Sustainability</title>
+    <meta
+        name="description"
+        content="Personal portfolio showcasing my experience in marketing, digital communication, analytics and sustainability."
+    >
 
+    <!-- Modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-
-<nav class="navbar">
-    <a href="#home" class="brand">PORTFOLIO<span>.</span></a>
-
-    <div class="nav-links">
-        <a href="#profile">Profile</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact" class="nav-contact">Contact ↗</a>
-    </div>
-</nav>
-
-
-<!-- HERO -->
-
-<header class="hero" id="home">
-
-    <div class="hero-content">
-
-        <span class="badge">
-            <span class="status-dot"></span>
-            PERSONAL PORTFOLIO
-        </span>
-
-        <h1>
-            Curious by Nature.<br>
-            <span>Driven by Challenges.</span>
-        </h1>
-
-        <p class="hero-description">
-            Exploring the intersection of marketing, sustainability and innovation.
-            Passionate about creating meaningful experiences, embracing new perspectives
-            and turning ideas into impact.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#video" class="btn btn-primary">
-                Get to Know Me <span>↘</span>
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="logo" href="#home" aria-label="Go to homepage">
+                YOUR<span>NAME.</span>
             </a>
 
-            <a href="#experience" class="btn btn-secondary">
-                Explore My Experience <span>↗</span>
-            </a>
-        </div>
-
-        <div class="hero-footer">
-            <span class="footer-line"></span>
-            MARKETING · SUSTAINABILITY · INNOVATION
-        </div>
-
-    </div>
-
-    <div class="hero-visual">
-        <div class="image-decoration"></div>
-
-        <div class="hero-image">
-            <img src="Bewerbungsfoto.jpg" alt="Professional portrait">
-        </div>
-
-        <div class="floating-card">
-            <span class="floating-icon">✳</span>
-            <div>
-                <strong>Curiosity meets purpose.</strong>
-                <p>Always exploring what's next.</p>
+            <div class="nav-links">
+                <a href="#profile">Profile</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact" class="nav-contact">Contact <span>↗</span></a>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-</header>
+    <main>
 
+        <!-- Hero -->
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
 
-<!-- INTRODUCTION VIDEO -->
+                <div class="hero-content">
+                    <div class="eyebrow">
+                        <span class="status-dot"></span>
+                        BUSINESS · DIGITAL · SUSTAINABILITY
+                    </div>
 
-<section class="intro-video-section" id="video">
+                    <h1>
+                        Curious by Nature.<br>
+                        <span>Driven by Challenges.</span>
+                    </h1>
 
-    <div class="section-heading">
-        <span class="section-label">A LITTLE INTRODUCTION</span>
-        <h2>Get to Know <span>Me.</span></h2>
-        <p>
-            Beyond the CV — a glimpse of my personality,
-            my passions and what drives me.
-        </p>
-    </div>
+                    <p class="hero-description">
+                        I combine business thinking with creative communication
+                        and a passion for digital innovation. Curious about new
+                        perspectives, motivated by meaningful challenges, and
+                        always ready to turn ideas into impact.
+                    </p>
 
-    <div class="video-container">
-        <video class="intro-video" controls playsinline preload="metadata">
-            <source src="./introduction.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
-    </div>
+                    <div class="hero-buttons">
+                        <a href="#video" class="btn btn-primary">
+                            Get to Know Me <span>↘</span>
+                        </a>
 
-    <div class="video-caption">
-        <span>PERSONAL INTRODUCTION</span>
-        <span>01 / GET TO KNOW ME</span>
-    </div>
+                        <a href="CV.pdf" class="btn btn-secondary" download>
+                            Download CV <span>↓</span>
+                        </a>
 
-</section>
+                        <a
+                            href="https://www.linkedin.com/in/DEIN-PROFIL/"
+                            class="btn btn-linkedin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Find me on LinkedIn <span>↗</span>
+                        </a>
+                    </div>
 
+                    <div class="hero-note">
+                        <span class="note-line"></span>
+                        Open to new perspectives and opportunities
+                    </div>
+                </div>
 
-<!-- PROFILE -->
+                <div class="hero-visual">
+                    <div class="portrait-frame">
+                        <img
+                            src="Bewerbungsfoto.jpg"
+                            alt="Professional portrait"
+                            class="portrait"
+                        >
+                    </div>
 
-<section class="content-section profile-section" id="profile">
+                    <div class="floating-card">
+                        <span class="floating-card-icon">✳</span>
+                        <div>
+                            <strong>Curiosity meets strategy</strong>
+                            <p>Always learning. Always evolving.</p>
+                        </div>
+                    </div>
 
-    <div class="section-heading left-heading">
-        <span class="section-label">01 / ABOUT ME</span>
-        <h2>A Profile Built on <span>Curiosity.</span></h2>
-    </div>
+                    <div class="decorative-circle circle-one"></div>
+                    <div class="decorative-circle circle-two"></div>
+                </div>
 
-    <div class="profile-grid">
-
-        <div class="profile-main">
-            <p class="profile-lead">
-                Business administration graduate with three years of international
-                professional experience in a global B2B environment — now
-                specializing in Digital, Social and Sustainable Marketing.
-            </p>
-
-            <p>
-                Through my dual study program at Dentsply Sirona, I developed a strong
-                foundation in business administration while gaining hands-on experience
-                in Digital Marketing, Corporate Communications, Customer Centricity,
-                Sustainability and Artificial Intelligence.
-            </p>
-
-            <p>
-                These experiences shaped my interest in the intersection of strategic
-                marketing, digital transformation and sustainable business practices,
-                leading to my master's specialization at Darmstadt University of
-                Applied Sciences.
-            </p>
-
-            <p>
-                I bring an analytical, strategic and results-oriented mindset,
-                combined with a practical approach to problem-solving, international
-                collaboration, data-driven marketing and digital communication.
-            </p>
-        </div>
-
-        <aside class="profile-aside">
-            <div class="fact-card">
-                <span class="fact-number">03+</span>
-                <span class="fact-title">Years of Professional Experience</span>
-                <p>International experience in a global B2B company.</p>
             </div>
+        </section>
 
-            <div class="fact-card">
-                <span class="fact-number">4</span>
-                <span class="fact-title">Core Areas of Expertise</span>
-                <p>Marketing, Analytics, AI and Sustainability.</p>
+        <!-- Introduction Video -->
+        <section class="video-section section" id="video">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">A LITTLE INTRODUCTION</p>
+                    <h2>Get to <span>Know Me.</span></h2>
+                    <p class="section-description">
+                        Beyond the CV: a short introduction to who I am,
+                        what motivates me, and what I care about.
+                    </p>
+                </div>
+
+                <div class="video-frame">
+                    <video controls playsinline preload="metadata">
+                        <source src="introduction.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
             </div>
+        </section>
 
-            <div class="fact-card">
-                <span class="fact-number">M.Sc.</span>
-                <span class="fact-title">Current Academic Focus</span>
-                <p>Digital, Social and Sustainable Marketing.</p>
+        <!-- Profile -->
+        <section class="section profile-section" id="profile">
+            <div class="container profile-grid">
+
+                <div class="section-heading align-left">
+                    <p class="section-label">01 / PROFILE</p>
+                    <h2>Business mindset.<br><span>Creative perspective.</span></h2>
+                </div>
+
+                <div class="profile-copy">
+                    <p class="lead">
+                        I am interested in the intersection of business,
+                        communication, technology and sustainability.
+                    </p>
+
+                    <p>
+                        Through my dual study programme in Business
+                        Administration and my practical experience at
+                        Sirona Dental Systems, I have developed a broad
+                        understanding of business processes and corporate
+                        communication.
+                    </p>
+
+                    <p>
+                        I enjoy exploring how digital tools, data and
+                        creative thinking can improve the way organisations
+                        communicate, collaborate and create value.
+                    </p>
+
+                    <p>
+                        Currently, I am preparing to continue this journey
+                        with a Master's degree in Digital, Social and
+                        Sustainable Marketing.
+                    </p>
+
+                    <div class="profile-tags">
+                        <span>Strategic Thinking</span>
+                        <span>Creative Problem-Solving</span>
+                        <span>Continuous Learning</span>
+                    </div>
+                </div>
+
             </div>
-        </aside>
+        </section>
 
-    </div>
+        <!-- Expertise -->
+        <section class="section expertise-section" id="expertise">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">02 / EXPERTISE</p>
+                    <h2>Where I create <span>value.</span></h2>
+                    <p class="section-description">
+                        A combination of analytical thinking, communication
+                        skills and a hands-on approach to digital tools.
+                    </p>
+                </div>
 
-</section>
+                <div class="expertise-grid">
 
+                    <article class="expertise-card">
+                        <div class="card-topline">
+                            <span class="card-number">01</span>
+                            <span class="card-symbol">↗</span>
+                        </div>
+                        <h3>Marketing & Communication</h3>
+                        <p>
+                            Developing communication approaches, supporting
+                            digital campaigns and creating engaging content
+                            for different audiences and channels.
+                        </p>
+                        <div class="tag-list">
+                            <span>Digital Marketing</span>
+                            <span>Content</span>
+                            <span>Community Management</span>
+                        </div>
+                    </article>
 
-<!-- CORE COMPETENCIES -->
+                    <article class="expertise-card">
+                        <div class="card-topline">
+                            <span class="card-number">02</span>
+                            <span class="card-symbol">⌁</span>
+                        </div>
+                        <h3>Analytics & Strategy</h3>
+                        <p>
+                            Using data and structured thinking to understand
+                            performance, identify opportunities and support
+                            informed business decisions.
+                        </p>
+                        <div class="tag-list">
+                            <span>Analytics</span>
+                            <span>Reporting</span>
+                            <span>Strategic Thinking</span>
+                        </div>
+                    </article>
 
-<section class="content-section expertise-section" id="expertise">
+                    <article class="expertise-card">
+                        <div class="card-topline">
+                            <span class="card-number">03</span>
+                            <span class="card-symbol">✳</span>
+                        </div>
+                        <h3>Digitalisation & AI</h3>
+                        <p>
+                            Exploring new technologies and AI-supported
+                            workflows to make communication and business
+                            processes more effective.
+                        </p>
+                        <div class="tag-list">
+                            <span>AI Applications</span>
+                            <span>Digital Workflows</span>
+                            <span>Innovation</span>
+                        </div>
+                    </article>
 
-    <div class="section-heading">
-        <span class="section-label">02 / WHAT I BRING</span>
-        <h2>Core Competencies <span>& Tools.</span></h2>
-        <p>
-            Combining strategic thinking, analytical skills and digital tools
-            to create meaningful business impact.
-        </p>
-    </div>
+                    <article class="expertise-card">
+                        <div class="card-topline">
+                            <span class="card-number">04</span>
+                            <span class="card-symbol">◎</span>
+                        </div>
+                        <h3>Process & Collaboration</h3>
+                        <p>
+                            Working across functions, understanding
+                            operational processes and supporting practical
+                            improvements in an international business
+                            environment.
+                        </p>
+                        <div class="tag-list">
+                            <span>Process Optimisation</span>
+                            <span>Teamwork</span>
+                            <span>Sustainability</span>
+                        </div>
+                    </article>
 
-    <div class="competency-grid">
+                </div>
 
-        <article class="competency-card">
-            <span class="card-index">01</span>
-            <div class="competency-icon">↗</div>
-            <h3>Marketing & Communications</h3>
-            <div class="tag-list">
-                <span>Digital Marketing</span>
-                <span>Corporate Communications</span>
-                <span>Social Media Marketing</span>
-                <span>Content Management</span>
-                <span>Community Management</span>
-                <span>Email Marketing</span>
-                <span>Marketing Automation</span>
-                <span>Social Listening</span>
+                <!-- Tools -->
+                <div class="tools-block">
+                    <div class="tools-heading">
+                        <p class="section-label">TOOLS & TECHNOLOGIES</p>
+                        <p class="tools-subtitle">
+                            Platforms I have worked with
+                        </p>
+                    </div>
+
+                    <div class="tools-list">
+                        <span>Sprinklr</span>
+                        <span>Oracle Eloqua</span>
+                        <span>Microsoft 365</span>
+                        <span>SAP ERP</span>
+                        <span>Canva</span>
+                        <span>Microsoft Clipchamp</span>
+                        <span>YouTube</span>
+                        <span>Microsoft Excel</span>
+                    </div>
+                </div>
             </div>
-        </article>
+        </section>
 
-        <article class="competency-card">
-            <span class="card-index">02</span>
-            <div class="competency-icon">⌁</div>
-            <h3>Analytics & Strategy</h3>
-            <div class="tag-list">
-                <span>Data Analysis</span>
-                <span>Performance Analysis</span>
-                <span>KPI Reporting</span>
-                <span>Benchmarking</span>
-                <span>Market Research</span>
-                <span>Customer Centricity</span>
+        <!-- Experience -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-heading align-left">
+                    <p class="section-label">03 / EXPERIENCE</p>
+                    <h2>Learning by <span>doing.</span></h2>
+                    <p class="section-description">
+                        Practical experience across communication,
+                        marketing, digitalisation and business operations.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <p class="experience-date">09/2022 — 09/2026</p>
+                            <h3>Dual Study Programme — Business Administration</h3>
+                            <p class="company-name">
+                                Sirona Dental Systems GmbH · Bensheim, Germany
+                            </p>
+                        </div>
+                        <span class="experience-type">DUAL STUDIES</span>
+                    </div>
+
+                    <div class="experience-body">
+                        <p class="experience-intro">
+                            Combining academic business education with
+                            hands-on experience in different business
+                            functions and project environments.
+                        </p>
+
+                        <div class="project-grid">
+
+                            <article class="project-item">
+                                <span class="project-index">01</span>
+                                <div>
+                                    <h4>Community Management & Customer Centricity</h4>
+                                    <p>
+                                        Supported initiatives focused on
+                                        customer engagement, community
+                                        interaction and customer-oriented
+                                        communication.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <span class="project-index">02</span>
+                                <div>
+                                    <h4>Digital Marketing & Analytics</h4>
+                                    <p>
+                                        Worked with Sprinklr and Oracle Eloqua
+                                        in the context of digital marketing,
+                                        campaign activities and performance
+                                        analysis.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <span class="project-index">03</span>
+                                <div>
+                                    <h4>Global YouTube Strategy</h4>
+                                    <p>
+                                        Contributed to topics related to
+                                        global video communication and
+                                        YouTube strategy.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <span class="project-index">04</span>
+                                <div>
+                                    <h4>AI-Supported Communication</h4>
+                                    <p>
+                                        Explored AI-supported podcast and
+                                        communication workflows, including
+                                        content production with Clipchamp.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <span class="project-index">05</span>
+                                <div>
+                                    <h4>Sustainability & BEYOND</h4>
+                                    <p>
+                                        Gained insights into sustainability
+                                        topics and initiatives connected
+                                        with corporate responsibility.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <span class="project-index">06</span>
+                                <div>
+                                    <h4>Supply Chain & Process Optimisation</h4>
+                                    <p>
+                                        Developed an understanding of
+                                        operational processes and supported
+                                        process-related tasks using SAP
+                                        and Microsoft Excel.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </article>
+        </section>
 
-        <article class="competency-card">
-            <span class="card-index">03</span>
-            <div class="competency-icon">✳</div>
-            <h3>Tools & Technologies</h3>
-            <div class="tag-list">
-                <span>Sprinklr</span>
-                <span>Oracle Eloqua</span>
-                <span>Microsoft Excel</span>
-                <span>Word & PowerPoint</span>
-                <span>SharePoint</span>
-                <span>Clipchamp</span>
-                <span>SAP ERP</span>
-                <span>Canva</span>
+        <!-- Education -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">04 / EDUCATION</p>
+                    <h2>Building a strong <span>foundation.</span></h2>
+                </div>
+
+                <div class="education-list">
+
+                    <article class="education-card education-current">
+                        <div class="education-year">
+                            <span>10/2026</span>
+                            <span class="year-line"></span>
+                            <span>10/2028</span>
+                        </div>
+
+                        <div class="education-content">
+                            <span class="education-status">UPCOMING</span>
+                            <h3>M.Sc. Digital, Social and Sustainable Marketing</h3>
+                            <p class="education-institution">
+                                Darmstadt University of Applied Sciences (h_da)
+                            </p>
+                            <p>
+                                Focus on the role of digital, social and
+                                sustainable marketing in a changing business
+                                environment.
+                            </p>
+                        </div>
+
+                        <span class="education-arrow">↗</span>
+                    </article>
+
+                    <article class="education-card">
+                        <div class="education-year">
+                            <span>10/2023</span>
+                            <span class="year-line"></span>
+                            <span>09/2026</span>
+                        </div>
+
+                        <div class="education-content">
+                            <h3>B.A. Business Administration — Industry</h3>
+                            <p class="education-institution">
+                                Baden-Wuerttemberg Cooperative State University
+                                (DHBW), Mannheim
+                            </p>
+                            <p>
+                                Dual study programme combining academic
+                                coursework with practical business experience.
+                            </p>
+                            <div class="academic-results">
+                                <span>Final grade: <strong>1.6</strong></span>
+                                <span>Thesis grade: <strong>1.0</strong></span>
+                            </div>
+                        </div>
+
+                        <span class="education-arrow">↗</span>
+                    </article>
+
+                    <article class="education-card">
+                        <div class="education-year">
+                            <span>—</span>
+                        </div>
+
+                        <div class="education-content">
+                            <h3>Abitur</h3>
+                            <p class="education-institution">
+                                Lessing-Gymnasium Lampertheim
+                            </p>
+                            <p>University entrance qualification.</p>
+                            <div class="academic-results">
+                                <span>Final grade: <strong>1.1</strong></span>
+                            </div>
+                        </div>
+
+                        <span class="education-arrow">↗</span>
+                    </article>
+
+                </div>
             </div>
-        </article>
+        </section>
 
-        <article class="competency-card">
-            <span class="card-index">04</span>
-            <div class="competency-icon">◎</div>
-            <h3>Digitalization & AI</h3>
-            <div class="tag-list">
-                <span>AI-Assisted Content Creation</span>
-                <span>AI in Corporate Communications</span>
-                <span>Lean AI</span>
-                <span>Digital Communications</span>
-                <span>Generative AI Guidelines</span>
+        <!-- Additional Experience & Awards -->
+        <section class="section additional-section" id="additional">
+            <div class="container additional-grid">
+
+                <div>
+                    <p class="section-label">05 / BEYOND THE CLASSROOM</p>
+                    <h2>Experiences that <span>shape me.</span></h2>
+                    <p class="section-description">
+                        Personal initiative, social commitment and
+                        recognition for academic achievement.
+                    </p>
+                </div>
+
+                <div class="additional-list">
+
+                    <article class="additional-item">
+                        <div class="additional-icon">+</div>
+                        <div>
+                            <p class="additional-date">08/2022 — 08/2023</p>
+                            <h3>Voluntary Social Year (FSJ)</h3>
+                            <p>
+                                German Red Cross (Deutsches Rotes Kreuz)
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="additional-item">
+                        <div class="additional-icon">✳</div>
+                        <div>
+                            <p class="additional-date">2022</p>
+                            <h3>STEM Award</h3>
+                            <p>Roche Diagnostics</p>
+                        </div>
+                    </article>
+
+                    <article class="additional-item">
+                        <div class="additional-icon">★</div>
+                        <div>
+                            <p class="additional-date">Academic Recognition</p>
+                            <h3>Recognition for Academic Performance</h3>
+                            <p>Lions Club Lampertheim</p>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-        </article>
+        </section>
 
-    </div>
+        <!-- Languages -->
+        <section class="languages-section">
+            <div class="container languages-grid">
+                <div>
+                    <p class="section-label">LANGUAGES</p>
+                    <h2>Connecting across <span>cultures.</span></h2>
+                </div>
 
-</section>
+                <div class="language-list">
+                    <div class="language-item">
+                        <span>German</span>
+                        <span class="language-note">Native / fluent*</span>
+                    </div>
+                    <div class="language-item">
+                        <span>English</span>
+                        <span class="language-note">Professional*</span>
+                    </div>
+                    <div class="language-item">
+                        <span>French</span>
+                        <span class="language-note">*Please specify level</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-<!-- PROFESSIONAL EXPERIENCE -->
-
-<section class="content-section experience-section" id="experience">
-
-    <div class="section-heading left-heading">
-        <span class="section-label">03 / PROFESSIONAL JOURNEY</span>
-        <h2>Experience That <span>Creates Impact.</span></h2>
-        <p>
-            Combining business fundamentals with practical experience
-            across marketing, communication, sustainability and operations.
-        </p>
-    </div>
-
-    <div class="timeline">
-
-        <article class="timeline-item">
-
-            <div class="timeline-marker"></div>
-
-            <div class="timeline-date">09/2022 — 09/2026</div>
-
-            <div class="timeline-content">
-
-                <span class="experience-type">DUAL STUDY PROGRAM</span>
-
-                <h3>SIRONA Dental Systems GmbH</h3>
-
-                <p class="timeline-location">Bensheim, Germany</p>
-
-                <h4>Business Administration — Industry Track</h4>
-
-                <p class="experience-intro">
-                    Four years of combined academic and practical experience
-                    within an international dental technology company.
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-content">
+                <p class="section-label">06 / CONTACT</p>
+                <h2>Let's create something<br><span>meaningful.</span></h2>
+                <p class="contact-description">
+                    Interested in connecting, exchanging ideas or exploring
+                    opportunities? I would be happy to hear from you.
                 </p>
 
-                <div class="project-block">
-                    <h4>Community Management & Customer Centricity</h4>
-                    <ul>
-                        <li>
-                            Wrote a bachelor's thesis on community management in
-                            digital B2B marketing, incorporating international expert
-                            interviews, qualitative analysis and the development of
-                            a practical community management framework.
-                        </li>
-                        <li>
-                            Analyzed customer-centric approaches and community
-                            management practices, deriving strategic recommendations
-                            for digital customer communication.
-                        </li>
-                    </ul>
+                <div class="contact-buttons">
+                    <!-- Replace with your real email address -->
+                    <a
+                        href="mailto:your.email@example.com"
+                        class="btn btn-light"
+                    >
+                        Get in Touch <span>↗</span>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/DEIN-PROFIL/"
+                        class="btn btn-outline-light"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Connect on LinkedIn <span>↗</span>
+                    </a>
                 </div>
-
-                <div class="project-block">
-                    <h4>Digital Marketing & Marketing Analytics</h4>
-                    <ul>
-                        <li>
-                            Analyzed global social media and digital marketing KPIs
-                            using Sprinklr to identify optimization opportunities
-                            and develop data-driven recommendations.
-                        </li>
-                        <li>
-                            Developed email marketing and customer journey
-                            recommendations for the UKINOR region based on campaign,
-                            segmentation and content analyses using Oracle Eloqua.
-                        </li>
-                        <li>
-                            Contributed to a global YouTube strategy and benchmarking
-                            project, including competitor analysis, SEO assessment,
-                            content formats, audience engagement and governance.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-block">
-                    <h4>AI, Digital Communications & Sustainability</h4>
-                    <ul>
-                        <li>
-                            Initiated AI-supported internal podcast formats using
-                            Microsoft Clipchamp and text-to-speech technologies;
-                            developed AI guidelines supporting generative AI adoption
-                            and Lean AI practices.
-                        </li>
-                        <li>
-                            Created digital communication content for SharePoint,
-                            Viva Engage, Town Hall events and leadership communications.
-                        </li>
-                        <li>
-                            Supported the BEYOND sustainability strategy, including
-                            sustainability communications, reporting, sustainable
-                            packaging initiatives and benchmarking activities.
-                        </li>
-                        <li>
-                            Conducted qualitative research into the impact of
-                            sustainability initiatives on employee engagement through
-                            interviews across regions and functions, deriving
-                            actionable recommendations.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-block">
-                    <h4>Supply Chain, Process Optimization & Materials Logistics</h4>
-                    <ul>
-                        <li>
-                            Performed a value stream analysis of a Mixed Model Flow
-                            Line (MMFL), identifying bottlenecks, inefficiencies
-                            and process optimization opportunities.
-                        </li>
-                        <li>
-                            Developed and prioritized improvement initiatives,
-                            including digital picking process optimization,
-                            material location redesign and ESD and workplace concepts.
-                        </li>
-                        <li>
-                            Analyzed material flows and inventory data using SAP
-                            and Excel to develop replenishment concepts supporting
-                            efficient logistics and production processes.
-                        </li>
-                    </ul>
-                </div>
-
             </div>
-        </article>
+        </section>
 
-    </div>
+    </main>
 
-</section>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="#home">YOUR<span>NAME.</span></a>
 
+            <p>Curious by nature. Driven by challenges.</p>
 
-<!-- EDUCATION -->
+            <a href="#home" class="back-to-top">Back to top ↑</a>
 
-<section class="content-section education-section" id="education">
-
-    <div class="section-heading">
-        <span class="section-label">04 / ACADEMIC BACKGROUND</span>
-        <h2>Education & <span>Development.</span></h2>
-        <p>
-            Building on a strong business foundation while specializing
-            in digital and sustainable marketing.
-        </p>
-    </div>
-
-    <div class="education-grid">
-
-        <article class="education-card featured-education">
-
-            <span class="education-status">CURRENT PROGRAM</span>
-            <span class="education-date">10/2026 — EXPECTED 10/2028</span>
-
-            <h3>Master of Science</h3>
-            <h4>Digital, Social and Sustainable Marketing</h4>
-
-            <p class="education-institution">
-                Darmstadt University of Applied Sciences (h_da)
+            <p class="copyright">
+                © <span id="current-year">2026</span> Your Name. All rights reserved.
             </p>
+        </div>
+    </footer>
 
-            <p>
-                Specializing in the intersection of digital marketing,
-                social responsibility and sustainable business practices.
-            </p>
-
-        </article>
-
-        <article class="education-card">
-
-            <span class="education-date">10/2023 — 10/2026</span>
-
-            <h3>Bachelor of Arts</h3>
-            <h4>Business Administration — Industry | Grade 1.6</h4>
-
-            <p class="education-institution">
-                Baden-Württemberg Cooperative State University
-                (DHBW Mannheim)
-            </p>
-
-            <p>
-                Specializations: Marketing & Human Resource Management.
-            </p>
-
-            <div class="thesis-box">
-                <strong>Bachelor's Thesis | Grade 1.0</strong>
-                <p>
-                    “Community Management in Digital B2B Marketing:
-                    A Theoretical and Empirical Analysis Using the
-                    Example of Dentsply Sirona”
-                </p>
-            </div>
-
-        </article>
-
-        <article class="education-card">
-
-            <span class="education-date">08/2013 — 07/2022</span>
-
-            <h3>General Higher Education Entrance Qualification</h3>
-            <h4>Grade 1.1</h4>
-
-            <p class="education-institution">
-                Lessing-Gymnasium Lampertheim
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- LANGUAGES & ADDITIONAL EXPERIENCE -->
-
-<section class="content-section additional-section" id="additional">
-
-    <div class="section-heading left-heading">
-        <span class="section-label">05 / BEYOND THE CLASSROOM</span>
-        <h2>More About <span>Me.</span></h2>
-    </div>
-
-    <div class="additional-grid">
-
-        <article class="additional-card">
-            <div class="additional-heading">
-                <span class="additional-icon">文</span>
-                <h3>Languages</h3>
-            </div>
-
-            <div class="language-row">
-                <span>German</span>
-                <span class="language-label">Language</span>
-            </div>
-
-            <div class="language-row">
-                <span>English</span>
-                <span class="language-label">Language</span>
-            </div>
-
-            <div class="language-row">
-                <span>French</span>
-                <span class="language-label">Language</span>
-            </div>
-
-            <p class="small-note">
-                Language proficiency levels can be added if required.
-            </p>
-        </article>
-
-        <article class="additional-card">
-            <div class="additional-heading">
-                <span class="additional-icon">✦</span>
-                <h3>Additional Experience & Honors</h3>
-            </div>
-
-            <div class="honor-item">
-                <span class="honor-date">08/2022 — 08/2023</span>
-                <h4>Voluntary Social Year (FSJ)</h4>
-                <p>German Red Cross (DRK), Kreisverband Odenwaldkreis e. V.</p>
-            </div>
-
-            <div class="honor-item">
-                <span class="honor-date">2022</span>
-                <h4>Award for Outstanding Achievement in STEM</h4>
-                <p>Roche Diagnostics GmbH</p>
-            </div>
-
-            <div class="honor-item">
-                <span class="honor-date">2022</span>
-                <h4>Recognition Award for Outstanding Academic Performance</h4>
-                <p>Lions Club Lampertheim</p>
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact-section" id="contact">
-
-    <span class="section-label">LET'S CONNECT</span>
-
-    <h2>Let's create something meaningful.</h2>
-
-    <p>
-        Interested in digital marketing, sustainability or innovation?
-        I'd love to connect and exchange ideas.
-    </p>
-
-    <!-- Replace this placeholder with your actual email address -->
-    <a class="btn btn-primary" href="mailto:your.email@example.com">
-        Get in Touch <span>↗</span>
-    </a>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer class="site-footer">
-    <a href="#home" class="brand">PORTFOLIO<span>.</span></a>
-    <p>Marketing · Sustainability · Innovation</p>
-    <a href="#home" class="back-to-top">Back to top ↑</a>
-</footer>
+    <script>
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 </html>
