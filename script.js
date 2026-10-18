@@ -1,62 +1,89 @@
-document.querySelectorAll(".linkedin-carousel").forEach((carousel) => {
-  const track = carousel.querySelector(".linkedin-track");
-  const slides = carousel.querySelectorAll(".linkedin-slide");
-  const dots = carousel.querySelectorAll(".linkedin-dot");
-  const prev = carousel.querySelector(".linkedin-prev");
-  const next = carousel.querySelector(".linkedin-next");
-  const counter = carousel.querySelector(".linkedin-counter");
 
-  if (!track || slides.length === 0 || !prev || !next || !counter) {
-    return;
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const carousels = document.querySelectorAll(".linkedin-carousel");
 
-  let current = 0;
-  let autoplay;
+  carousels.forEach(function (carousel) {
+    const track = carousel.querySelector(".linkedin-track");
+    const slides = carousel.querySelectorAll(".linkedin-slide");
+    const dots = carousel.querySelectorAll(".linkedin-dot");
+    const prev = carousel.querySelector(".linkedin-prev");
+    const next = carousel.querySelector(".linkedin-next");
+    const counter = carousel.querySelector(".linkedin-counter");
 
-  function showSlide(index) {
-    current = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
+    // Prüfen, ob alle wichtigen Elemente vorhanden sind
+    if (!track || slides.length === 0 || !prev || !next) {
+      console.error("LinkedIn carousel: Elemente fehlen.", carousel);
+      return;
+    }
 
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === current);
-      dot.setAttribute("aria-current", i === current ? "true" : "false");
-    });
+    let currentIndex = 0;
+    let autoplayTimer = null;
 
-    counter.textContent =
-      `${String(current + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
-  }
+    function showSlide(index) {
+      currentIndex = (index + slides.length) % slides.length;
 
-  function stopAutoplay() {
-    clearInterval(autoplay);
-  }
+      track.style.transform =
+        "translateX(-" + currentIndex * 100 + "%)";
 
-  function startAutoplay() {
-    stopAutoplay();
-    autoplay = setInterval(() => showSlide(current + 1), 3000);
-  }
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle("active", i === currentIndex);
+        dot.setAttribute(
+          "aria-current",
+          i === currentIndex ? "true" : "false"
+        );
+      });
 
-  prev.addEventListener("click", () => {
-    showSlide(current - 1);
-    startAutoplay();
-  });
+      if (counter) {
+        counter.textContent =
+          String(currentIndex + 1).padStart(2, "0") +
+          " / " +
+          String(slides.length).padStart(2, "0");
+      }
+    }
 
-  next.addEventListener("click", () => {
-    showSlide(current + 1);
-    startAutoplay();
-  });
+    function stopAutoplay() {
+      if (autoplayTimer !== null) {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    }
 
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-      showSlide(i);
+    function startAutoplay() {
+      stopAutoplay();
+
+      autoplayTimer = setInterval(function () {
+        showSlide(currentIndex + 1);
+      }, 5000);
+    }
+
+    prev.addEventListener("click", function () {
+      showSlide(currentIndex - 1);
       startAutoplay();
     });
+
+    next.addEventListener("click", function () {
+      showSlide(currentIndex + 1);
+      startAutoplay();
+    });
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () {
+        showSlide(i);
+        startAutoplay();
+      });
+    });
+
+    // Beim Darüberfahren oder Bedienen pausieren
+    carousel.addEventListener("mouseenter", stopAutoplay);
+    carousel.addEventListener("mouseleave", startAutoplay);
+    carousel.addEventListener("focusin", stopAutoplay);
+    carousel.addEventListener("focusout", function (event) {
+      if (!carousel.contains(event.relatedTarget)) {
+        startAutoplay();
+      }
+    });
+
+    showSlide(0);
+    startAutoplay();
   });
-
-  carousel.addEventListener("mouseenter", stopAutoplay);
-  carousel.addEventListener("mouseleave", startAutoplay);
-  carousel.addEventListener("focusin", stopAutoplay);
-  carousel.addEventListener("focusout", startAutoplay);
-
-  showSlide(0);
-  startAutoplay();
 });
