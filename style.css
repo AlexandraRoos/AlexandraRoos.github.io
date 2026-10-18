@@ -1387,7 +1387,6 @@ p {
     }
 }
 
-
 /* ========================================
    LINKEDIN HIGHLIGHTS
 ======================================== */
@@ -1431,53 +1430,132 @@ p {
     line-height: 1.8;
 }
 
-/* Three-column layout */
+/* ========================================
+   LINKEDIN CAROUSEL
+======================================== */
 
-.linkedin-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+.linkedin-carousel {
     width: 100%;
-    align-items: start;
+    max-width: 560px;
+    margin: 0 auto;
 }
 
-.linkedin-card {
-    width: 100%;
+.linkedin-track {
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.linkedin-slide {
+    flex: 0 0 100%;
     min-width: 0;
     overflow: hidden;
+    box-sizing: border-box;
     border: 1px solid #e5e8f0;
     border-radius: 14px;
     background: #ffffff;
-    box-shadow: 0 8px 30px rgba(30, 45, 85, 0.05);
-    box-sizing: border-box;
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease;
+    box-shadow: 0 12px 36px rgba(30, 45, 85, 0.08);
 }
 
-.linkedin-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 36px rgba(30, 45, 85, 0.09);
-}
-
-/* LinkedIn embeds */
-
-.linkedin-card iframe {
+.linkedin-slide iframe {
     display: block;
     width: 100%;
     border: 0;
     background: #ffffff;
 }
 
-.linkedin-card:nth-child(1) iframe {
+/* Individual post heights */
+
+.linkedin-slide:nth-child(1) iframe {
     height: 1172px;
 }
 
-.linkedin-card:nth-child(2) iframe {
+.linkedin-slide:nth-child(2) iframe {
     height: 1151px;
 }
 
-.linkedin-card:nth-child(3) iframe {
+.linkedin-slide:nth-child(3) iframe {
     height: 1319px;
+}
+
+/* ========================================
+   CAROUSEL CONTROLS
+======================================== */
+
+.linkedin-carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 26px;
+}
+
+.linkedin-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #e5e8f0;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #34446f;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.linkedin-arrow:hover {
+    background: #5369b2;
+    color: #ffffff;
+    border-color: #5369b2;
+    transform: scale(1.05);
+}
+
+.linkedin-arrow:focus-visible,
+.linkedin-dot:focus-visible,
+.linkedin-cta:focus-visible {
+    outline: 3px solid #aabaff;
+    outline-offset: 4px;
+}
+
+/* Navigation dots */
+
+.linkedin-dots {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.linkedin-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+    background: #d5daea;
+    cursor: pointer;
+    transition: width 0.3s ease,
+                background 0.3s ease;
+}
+
+.linkedin-dot.active {
+    width: 25px;
+    background: #5369b2;
+}
+
+/* Slide counter */
+
+.linkedin-counter {
+    margin: 12px 0 0;
+    text-align: center;
+    color: #8b93a7;
+    font-size: 11px;
+    letter-spacing: 1.5px;
 }
 
 /* ========================================
@@ -1552,8 +1630,8 @@ p {
         padding: 80px 0;
     }
 
-    .linkedin-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .linkedin-carousel {
+        max-width: 520px;
     }
 }
 
@@ -1570,13 +1648,18 @@ p {
         margin-bottom: 30px;
     }
 
-    .linkedin-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 20px;
+    .linkedin-carousel {
+        max-width: 100%;
     }
 
-    .linkedin-card iframe {
-        max-width: 100%;
+    .linkedin-carousel-controls {
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .linkedin-arrow {
+        width: 38px;
+        height: 38px;
     }
 
     .linkedin-footer {
@@ -1587,5 +1670,17 @@ p {
         gap: 16px;
         padding: 10px 12px 10px 18px;
         font-size: 13px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .linkedin-track,
+    .linkedin-arrow,
+    .linkedin-dot,
+    .linkedin-cta,
+    .linkedin-cta-icon {
+        transition: none;
     }
 }
