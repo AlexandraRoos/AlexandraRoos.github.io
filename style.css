@@ -1,4 +1,3 @@
-
 /* ========================================
    DESIGN SYSTEM
 ======================================== */
@@ -778,7 +777,7 @@ p {
 
 .education-card {
     display: grid;
-    grid-template-columns: 150px 1fr 24px;
+    grid-template-columns: 150px 1fr;
     align-items: start;
     gap: 28px;
     padding: 27px 30px;
@@ -847,11 +846,7 @@ p {
     line-height: 1.8;
 }
 
-.education-arrow {
-    padding-top: 3px;
-    color: #8794b0;
-    font-size: 18px;
-}
+/* Education arrow removed */
 
 .academic-results {
     display: flex;
@@ -1259,7 +1254,7 @@ p {
     }
 
     .education-card {
-        grid-template-columns: 1fr 20px;
+        grid-template-columns: 1fr;
         gap: 13px;
         padding: 22px;
     }
@@ -1277,11 +1272,6 @@ p {
 
     .education-content {
         grid-column: 1;
-    }
-
-    .education-arrow {
-        grid-column: 2;
-        grid-row: 2;
     }
 
     .languages-grid {
