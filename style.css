@@ -100,7 +100,17 @@ p {
     color: var(--white);
     background: var(--blue);
 }
-
+/* Modern caption inside the video card */
+.video-caption {
+    margin: 0;
+    padding: 22px 28px 24px;
+    color: #3657e8;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
 /* ========================================
    NAVIGATION
 ======================================== */
