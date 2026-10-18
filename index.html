@@ -113,26 +113,136 @@
             </div>
         </section>
 
-        <!-- Introduction Video -->
-        <section class="video-section section" id="video">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-label">A LITTLE INTRODUCTION</p>
-                    <h2>Get to <span>Know Me.</span></h2>
-                    <p class="section-description">
-                        A glimpse beyond my professional journey: 
-                        the experiences, values, and adventures 
-                        that shape who I am.
-                    </p>
-                </div>
+       <!-- Introduction Video + LinkedIn Highlights -->
+<section class="section intro-highlights-section" id="video">
+    <div class="container">
 
+        <div class="section-heading">
+            <p class="section-label">A LITTLE INTRODUCTION</p>
+            <h2>Get to <span>Know Me.</span></h2>
+            <p class="section-description">
+                A glimpse beyond my professional journey:
+                the experiences, values, and adventures
+                that shape who I am.
+            </p>
+        </div>
+
+        <div class="intro-highlights-grid">
+
+            <!-- LEFT: INTRODUCTION VIDEO (2/3) -->
+            <div class="intro-video-column">
                 <div class="video-frame">
                     <video controls playsinline preload="metadata">
-                        <source src="Introduction" type="video/mp4">
+                        <source src="Introduction.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
                     </video>
                 </div>
             </div>
-        </section>
+
+            <!-- RIGHT: LINKEDIN HIGHLIGHTS (1/3) -->
+            <aside class="highlights-column" aria-label="LinkedIn highlights">
+
+                <div class="highlights-heading">
+                    <p class="section-label">MY PROFESSIONAL PRESENCE</p>
+                    <h3>LinkedIn <span>Highlights.</span></h3>
+                    <p>Selected insights, projects and ideas.</p>
+                </div>
+
+                <div class="linkedin-carousel">
+
+                    <div class="linkedin-track">
+
+                        <div class="linkedin-slide">
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7460368295116939264?collapsed=1"
+                                title="LinkedIn highlight 1"
+                                loading="lazy"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="linkedin-slide">
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7424799365648625664?collapsed=1"
+                                title="LinkedIn highlight 2"
+                                loading="lazy"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="linkedin-slide">
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7275795860360159232?collapsed=1"
+                                title="LinkedIn highlight 3"
+                                loading="lazy"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- MANUAL NAVIGATION -->
+                <div class="linkedin-carousel-controls">
+
+                    <button
+                        class="linkedin-arrow linkedin-prev"
+                        type="button"
+                        aria-label="Previous LinkedIn post"
+                        disabled>
+                        ←
+                    </button>
+
+                    <div class="linkedin-pagination">
+                        <div class="linkedin-dots">
+                            <button
+                                class="linkedin-dot active"
+                                type="button"
+                                aria-label="Show LinkedIn post 1"
+                                aria-current="true">
+                            </button>
+
+                            <button
+                                class="linkedin-dot"
+                                type="button"
+                                aria-label="Show LinkedIn post 2">
+                            </button>
+
+                            <button
+                                class="linkedin-dot"
+                                type="button"
+                                aria-label="Show LinkedIn post 3">
+                            </button>
+                        </div>
+
+                        <p class="linkedin-counter" aria-live="polite">
+                            01 / 03
+                        </p>
+                    </div>
+
+                    <button
+                        class="linkedin-arrow linkedin-next"
+                        type="button"
+                        aria-label="Next LinkedIn post">
+                        →
+                    </button>
+
+                </div>
+
+                <a
+                    href="https://www.linkedin.com/in/alexandra-roos/"
+                    class="linkedin-cta"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Let's connect on LinkedIn <span>↗</span>
+                </a>
+
+            </aside>
+
+        </div>
+    </div>
+</section>
 
         <!-- Profile -->
         <section class="section profile-section" id="profile">
@@ -541,84 +651,6 @@
             </div>
         </section>
 
-
-<!-- LinkedIn Highlights -->
-<section class="linkedin-section" id="linkedin-highlights">
-
-  <div class="section-heading">
-    <span class="section-label">MY PROFESSIONAL PRESENCE</span>
-    <h2>Featured on LinkedIn<span>.</span></h2>
-    <p class="linkedin-intro">
-      Selected insights, projects and ideas on marketing,
-      digital transformation and sustainability.
-    </p>
-  </div>
-
-  <div class="linkedin-carousel">
-    <div class="linkedin-track">
-
-      <div class="linkedin-slide">
-        <iframe
-          src="https://www.linkedin.com/embed/feed/update/urn:li:share:7460368295116939264?collapsed=1"
-          title="LinkedIn post 1"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div class="linkedin-slide">
-        <iframe
-          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7424799365648625664?collapsed=1"
-          title="LinkedIn post 2"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div class="linkedin-slide">
-        <iframe
-          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7275795860360159232?collapsed=1"
-          title="LinkedIn post 3"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-    </div>
-
-    <div class="linkedin-carousel-controls">
-      <button class="linkedin-arrow linkedin-prev"
-        type="button" aria-label="Previous post">←</button>
-
-      <div class="linkedin-dots">
-        <button class="linkedin-dot active" type="button"
-          aria-label="Show post 1"></button>
-        <button class="linkedin-dot" type="button"
-          aria-label="Show post 2"></button>
-        <button class="linkedin-dot" type="button"
-          aria-label="Show post 3"></button>
-      </div>
-
-      <button class="linkedin-arrow linkedin-next"
-        type="button" aria-label="Next post">→</button>
-    </div>
-
-    <p class="linkedin-counter" aria-live="polite">01 / 03</p>
-  </div>
-
-  <div class="linkedin-footer">
-    <p>Want to see more of my work and ideas?</p>
-    <a href="https://www.linkedin.com/in/alexandra-roos/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="linkedin-cta">
-      <span>Let’s connect on LinkedIn</span>
-      <span class="linkedin-cta-icon">↗</span>
-    </a>
-  </div>
-
-</section>
-
         <!-- Contact -->
         <section class="section contact-section" id="contact">
             <div class="container contact-content">
@@ -673,5 +705,71 @@
             new Date().getFullYear();
     </script>
 
+
+<script>
+    document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+</script>
+
+<script>
+    (() => {
+        const carousel = document.querySelector(".linkedin-carousel");
+        if (!carousel) return;
+
+        const track = carousel.querySelector(".linkedin-track");
+        const slides = [...track.querySelectorAll(".linkedin-slide")];
+        const prevButton = document.querySelector(".linkedin-prev");
+        const nextButton = document.querySelector(".linkedin-next");
+        const dots = [...document.querySelectorAll(".linkedin-dot")];
+        const counter = document.querySelector(".linkedin-counter");
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            currentIndex = Math.max(
+                0,
+                Math.min(index, slides.length - 1)
+            );
+
+            track.style.transform =
+                `translateX(-${currentIndex * 100}%)`;
+
+            dots.forEach((dot, i) => {
+                const isActive = i === currentIndex;
+                dot.classList.toggle("active", isActive);
+
+                if (isActive) {
+                    dot.setAttribute("aria-current", "true");
+                } else {
+                    dot.removeAttribute("aria-current");
+                }
+            });
+
+            counter.textContent =
+                `${String(currentIndex + 1).padStart(2, "0")} / ` +
+                `${String(slides.length).padStart(2, "0")}`;
+
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled =
+                currentIndex === slides.length - 1;
+        }
+
+        prevButton.addEventListener("click", () => {
+            showSlide(currentIndex - 1);
+        });
+
+        nextButton.addEventListener("click", () => {
+            showSlide(currentIndex + 1);
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                showSlide(index);
+            });
+        });
+
+        showSlide(0);
+    })();
+</script>    
 </body>
 </html>
