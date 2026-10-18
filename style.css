@@ -1386,3 +1386,125 @@ p {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* LinkedIn Highlights */
+.linkedin-section {
+    padding: 100px 0;
+    scroll-margin-top: 80px;
+}
+
+.linkedin-section .section-heading {
+    max-width: 700px;
+    margin-bottom: 42px;
+}
+
+.linkedin-section .section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6577bd;
+}
+
+.linkedin-section h2 {
+    margin: 0 0 18px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.linkedin-section h2 span {
+    color: #6577bd;
+}
+
+.linkedin-intro {
+    max-width: 580px;
+    color: #7b8499;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.linkedin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.linkedin-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e5e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(30, 45, 85, 0.05);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.linkedin-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(30, 45, 85, 0.09);
+}
+
+.linkedin-card iframe {
+    display: block;
+    width: 100%;
+    height: 570px;
+    border: 0;
+    background: #ffffff;
+}
+
+.linkedin-footer {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.linkedin-footer a {
+    color: #5369b2;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.linkedin-footer a:hover {
+    color: #263d8c;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .linkedin-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .linkedin-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 480px;
+        width: 100%;
+        justify-self: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .linkedin-section {
+        padding: 70px 0;
+    }
+
+    .linkedin-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .linkedin-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .linkedin-card iframe {
+        height: 550px;
+    }
+}
